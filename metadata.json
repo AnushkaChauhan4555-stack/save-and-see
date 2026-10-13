@@ -1,0 +1,6 @@
+{
+  "name": "Folio - Personal Reading Vault & Save for Later",
+  "description": "An elegant, distraction-free save-for-later reader and personal knowledge library with high-fidelity reading mode, highlights, audio listen mode, collections, and markdown export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

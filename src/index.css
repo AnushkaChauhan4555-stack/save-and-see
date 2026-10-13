@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Newsreader", "Lora", Georgia, serif;
+    --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+    --font-display: "Cinzel", "Newsreader", serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #1e293b;
+    background-color: #f8fafc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Selection styling */
+  ::selection {
+    background-color: #fde68a;
+    color: #78350f;
+  }
+}
+
+/* Custom reader font styling */
+.font-reader-serif {
+  font-family: var(--font-serif);
+}
+
+.font-reader-sans {
+  font-family: var(--font-sans);
+}
+
+.font-reader-mono {
+  font-family: var(--font-mono);
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.6);
+}
+
+/* Reader theme backgrounds */
+.theme-paper {
+  background-color: #fcf9f2;
+  color: #2c2523;
+}
+
+.theme-light {
+  background-color: #ffffff;
+  color: #1a202c;
+}
+
+.theme-slate {
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+
+.theme-charcoal {
+  background-color: #121212;
+  color: #d1d5db;
+}
+
+/* Reader article prose styles */
+.reader-prose p {
+  margin-bottom: 1.5em;
+  line-height: inherit;
+}
+
+.reader-prose h2 {
+  font-weight: 700;
+  margin-top: 2.2em;
+  margin-bottom: 0.8em;
+  letter-spacing: -0.02em;
+}
+
+.reader-prose h3 {
+  font-weight: 600;
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
+  letter-spacing: -0.01em;
+}
+
+.reader-prose blockquote {
+  border-left-width: 3px;
+  padding-left: 1.25rem;
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.reader-prose pre {
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+}
+
+.reader-prose ul, .reader-prose ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  padding-left: 1.75rem;
+}
+
+.reader-prose li {
+  margin-bottom: 0.6em;
+}
+
+.reader-prose img {
+  border-radius: 0.5rem;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+  object-fit: cover;
+}
